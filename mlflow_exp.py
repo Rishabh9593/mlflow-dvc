@@ -26,8 +26,8 @@ dataset_path = "data/diabetes.csv"
 
 # Load the dataset
 data = pd.read_csv(dataset_path)
-X = data.drop(columns=["target"])
-y = data["target"]
+X = data.drop(columns=["Outcome"])
+y = data["Outcome"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
